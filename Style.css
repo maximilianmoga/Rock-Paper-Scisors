@@ -1,0 +1,18 @@
+input:checked  + .radio-image {
+    border: 5px solid blue;
+} 
+    
+
+   
+body {
+
+  background-color: lightblue;
+  border: solid transparent;
+  text-align: center;
+  text-emphasis-color: black;
+  
+}  
+img {
+    border-radius: 50%;
+}  
+

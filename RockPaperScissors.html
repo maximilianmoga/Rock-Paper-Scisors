@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="./Style.css">  
+    <title>Rock, Paper, Scissors</title>
+</head>
+<header>
+    <h1>Welcome to Rock, Paper, Scissors Game!!!</h1>
+
+</header>
+<body>
+    <div>
+        <h2>Rules!!</h2>
+        <ul>
+            <h3>Pick the Object you think it will win</h3>
+            <h3>You can only pick one at the time</h3>
+            <h3>Pick at your own risk</h3>
+        </ul>
+<label>
+    Rock
+    <input name="players choice" value="Rock" type="radio" checked />
+    <img class="Rock-image" src= "https://images.homedepot-static.com/productImages/d78b8207-5bc3-4242-9b07-352a9ed9f430/svn/outdoor-essentials-bagged-204926-64_400_compressed.jpg" height="200" width="200">
+</label>
+<label>
+    Paper
+    <input name="players choice" value="Paper" type="radio" checked />
+    <img class="Paper-image" src= "https://images.ctfassets.net/f1fikihmjtrp/29Ke1N1Qv2X0KsFOC4xyHd/6258f6d0581f8fa655485da0ec61cda3/10240-1009-1-3ww-l.jpg" height="150" width="150">
+</label>
+
+<label>
+    Scissors
+    <input name="players choice" value="Scissors" type="radio" checked />
+    <img class="Scissors-image" src="https://www.ikea.com/us/en/images/products/sy-scissors__0112301_PE263788_S5.JPG?f=s" height="150" width="150">
+</label>
+<section>
+    <label>   
+    <p id="result-display"></p>
+    <p id="result-tally"><span id="wins"></span> 0 <span id="losses"> 0 </span><span id="draws"> 0 </span></p>
+    <p id="result-tally">wins: <span id="wins"> 0 </span><span id="losses">losses: </span><span id="losses"> 0 </span>draws: <span id="draws"> 0 </span></p>
+    <button id="are-you-sure">Are you sure</button>
+    <script type="module" src="game.js"></script> 
+    </label>
+</section>
+
+</body>
+</html>
