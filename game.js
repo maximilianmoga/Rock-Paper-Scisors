@@ -25,4 +25,7 @@ function getThrowFromNumber(number) {
 
 areYouSure.addEventListener('click', () => {
     console.log('areyousure')
+reset.addEventListener('click' , () => {
+
+});    
 });    

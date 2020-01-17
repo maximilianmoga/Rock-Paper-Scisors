@@ -3,4 +3,5 @@ export default function checkResult(player, computer) {
    
     if(player === 'scissors' && computer === 'paper') return 'win'
 
+    if(player === 'scissors' && computer === 'rock') return 'win'
 }
