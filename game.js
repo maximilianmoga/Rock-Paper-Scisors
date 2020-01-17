@@ -1,31 +1,44 @@
-const areYouSure = document.getElementById('are-you-sure')
-const resultDisplay = document.getElementById('result-display')
-const computerChoice = getThrowFromNumber();
-const result = checkResult(userChoice, computerChoice);
-console.log('user', userChoice);
-console.log('computer', computerChoice);
-console.log('result');
+import checkResult from '../rockPaperScissor.js';
+import getThrowFromNumber from '../game2.js';
 
 
-function getThrowFromNumber(number) {
-    if(number === 0) 'rock';
-    if(number === 1) 'paper';
-    if(number === 2) 'scissors';
-    if(number ===0) return 'rock';
-    if(number ===1) return 'paper';
-    if(number ===2) return 'scissiors';
+const button = document.getElementById('button');
 
-}
+const reset = document.getElementById('reset');
+
+const wins = document.getElementById('wins');
+
+const losses = document.getElementById('losses');
+
+const draws = document.getElementById('draws');
+
+const rock = document.getElementById('rock');
+
+const paper = document.getElementById('paper');
+
+const scissors = document.getElementById('scissors');
+
+const resultDisplay = document.getElementById('result-display');
+
+// add the rest of your DOM elements
 
 
-
-
-
-
-
-areYouSure.addEventListener('click', () => {
+button.addEventListener('click', () => {
     console.log('areyousure')
+
+    const computerChoice = getThrowFromNumber();
+    const result = checkResult(player, computer);
+
+
+    console.log('user', userChoice);
+    console.log('computer', computerChoice);
+    console.log('result');
+
+});
+
+
+    
 reset.addEventListener('click' , () => {
 
-});    
+    
 });    
