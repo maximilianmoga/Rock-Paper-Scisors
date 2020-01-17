@@ -2,14 +2,28 @@ import checkResult from '../rockPaperScissor.js';
 import getThrowFromNumber from '../game2.js';
 
 
-const areYouSure = document.getElementById('are-you-sure');
+const button = document.getElementById('button');
+
+const reset = document.getElementById('reset');
+
+const wins = document.getElementById('wins');
+
+const losses = document.getElementById('losses');
+
+const draws = document.getElementById('draws');
+
+const rock = document.getElementById('rock');
+
+const paper = document.getElementById('paper');
+
+const scissors = document.getElementById('scissors');
 
 const resultDisplay = document.getElementById('result-display');
 
 // add the rest of your DOM elements
 
 
-areYouSure.addEventListener('click', () => {
+button.addEventListener('click', () => {
     console.log('areyousure')
 
     const computerChoice = getThrowFromNumber();
